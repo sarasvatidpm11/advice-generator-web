@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.advice-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advice-container .advice-card {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 320px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.advice-container .advice-card .advice-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+.advice-container .advice-card p:first-child {
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+.advice-container .advice-card p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+}
+.advice-container .advice-card .divider {
+  margin: 30px 0;
+  display: none;
+}
+.advice-container .advice-card .divider .divider-small, .advice-container .advice-card .divider .divider-large {
+  display: none;
+}
+
+.btn-req-advice {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(150, 100%, 66%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.btn-req-advice:active {
+  background-color: #85ffc2;
+  box-shadow: 0px 0px 20px 5px rgba(82, 255, 168, 0.7);
+}
+
+@media (max-width: 374px) {
+  .advice-container .advice-card .divider {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-small {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-large {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .advice-container .advice-card .divider {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-small {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-large {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .advice-container .advice-card {
+    padding: 25px;
+    width: 400px;
+    height: 300px;
+  }
+  .advice-container .advice-card .divider {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-small {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-large {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .advice-container .advice-card {
+    padding: 20px;
+    width: 500px;
+    height: 280px;
+  }
+  .advice-container .advice-card .divider {
+    display: block;
+  }
+  .advice-container .advice-card .divider .divider-small {
+    display: none;
+  }
+  .advice-container .advice-card .divider .divider-large {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
